@@ -99,7 +99,7 @@ LOCATION:`, event_struct.Location, `
 END:VEVENT`)
 			}
 
-		case monthly:
+		case Monthly:
 			if event_struct.Rrules.Interval == 0 {
 				// каждый месяц
 				start := event_struct.Start.Format("20060201T150405")
@@ -130,7 +130,7 @@ END:VEVENT`)
 
 			}
 
-		case yearly:
+		case Yearly:
 			if event_struct.Rrules.Interval == 0 {
 				// каждый год
 				start := event_struct.Start.Format("20060201T150405")
