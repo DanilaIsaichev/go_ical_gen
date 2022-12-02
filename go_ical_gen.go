@@ -31,7 +31,7 @@ type Event struct {
 	Location string
 }
 
-func generate_event(event_struct Event) string {
+func Generate_event(event_struct Event) string {
 
 	event_ical_str := ""
 
